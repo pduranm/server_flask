@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar vídeos de Youtube</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <form action="/download_video" method="post" class="download-form">
+        <label for="video_url">URL del video:</label>
+        <input type="text" name="video_url" id="video_url" placeholder="Pon la URL aquí..." required>
+        <br>
+        <label for="exit_path">Ruta de guardado:</label>
+        <input type="text" name="exit_path" id="exit_path" placeholder="Pega aquí la ruta de guardado..." required>
+        <button type="button" onclick="selectDirectory()">Seleccionar Carpeta</button>
+        <br>
+        <progress id="progress_bar" value="0" max="100"></progress>
+        <br>
+        <button type="submit">Descargar</button>
+    </form>
+    <div>
+        <img class="logo_background" alt="">
+    </div>
+    <script>
+        function selectDirectory() {
+            // Puedes implementar la lógica para seleccionar el directorio aquí
+            alert('Implementa la lógica para seleccionar el directorio aquí');
+        }
+    </script>
+
+</body>
+</html>
+
