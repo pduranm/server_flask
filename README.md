@@ -1,7 +1,10 @@
 # Server_flask
 Código para crear un servidor Flask.
 
-Kernel y env: server_flask
+Kernel y env: 
+- Local: **executableTkinter**
+
+- Flask: **server_flask**
 
 - Crear un servidor usando flask y desplegar un webservice local para usar herramientas creadas en python.
 
@@ -10,15 +13,18 @@ Kernel y env: server_flask
 # Web App
 ## Descargar vídeos de Youtube (Python):
 Usaremos las librerías de **Ttkinter, Flask y Pytube** para crear una app para descargar vídeos de Youtube.
+- Con tkinter lo tendremos en un ejecutable (main.exe) para poder usarlo de manera local.
 
+- Si usamos la versión de usar 
 Con Pytube accedemos al enlace y a las opciones de descarga en Youtube.
 
 Usando ttkinter en python podremos crear los botones e inputs (URL + Ruta Origen y Ruta Destino) para interactuar con nuestro código.
 Despliegue de un server usando el framework de flask.
-Con ttkinter Custom podremos diseñar el html y css para crear la interfaz y que sea más simple e intuitiva.
+Con Flask podremos diseñar el html y css para crear la interfaz y que sea más simple e intuitiva.
 
 La idea es que se pueda desplegar un servidor en flask si se requiere a modo de pruebas en el desarrollo web.
 Incluso poder tenerlo desplegado en Docker y usar flask para mantener un servidor sin coste en una Raspberry Pi.
 
 # Calculadora de Jornadas:
 Dada una fecha en el input, calcula los días festivos del año y ofrece varias respuestas en función de lo que se necesite.
+Se aloja en un web service usando flask.
